@@ -3,7 +3,7 @@
 一个基于springboot的快速集成多数据源的启动器
 
 配置方式：
-
+```
 spring:
   datasource:
     dynamic:
@@ -24,3 +24,4 @@ spring:
           password: 123456
           driver-class-name: com.mysql.jdbc.Driver
           url: jdbc:mysql://47.100.20.186:3308/dynamic?characterEncoding=utf8&useSSL=false
+```
