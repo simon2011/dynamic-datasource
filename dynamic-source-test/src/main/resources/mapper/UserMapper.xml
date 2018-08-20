@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sitech.dform.appdmp.service.mapper.UserMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.anson.dyanmic.datasource.test.po.User">
+		<id column="id" property="id" />
+		<result column="phone" property="phone" />
+		<result column="username" property="username" />
+		<result column="password" property="password" />
+		<result column="salt" property="salt" />
+		<result column="email" property="email" />
+		<result column="pic" property="pic" />
+		<result column="checked" property="checked" />
+		<result column="create_time" property="createTime" />
+		<result column="login_time" property="loginTime" />
+		<result column="login_ip" property="loginIp" />
+		<result column="user_type" property="userType" />
+	</resultMap>
+
+	<sql id="Base_Column_List" >
+		id, phone, username, password, salt, email, pic,checked,create_time,login_time,login_ip,user_type
+	</sql>
+
+
+	
+</mapper>

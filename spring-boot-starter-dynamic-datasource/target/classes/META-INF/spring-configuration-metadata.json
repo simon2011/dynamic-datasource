@@ -1,0 +1,31 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.anson.dynamic.datasource.autoconfigure.DynamicDataSourceProperties",
+      "name": "spring.datasource.dynamic",
+      "type": "com.anson.dynamic.datasource.autoconfigure.DynamicDataSourceProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.anson.dynamic.datasource.autoconfigure.DynamicDataSourceProperties",
+      "name": "spring.datasource.dynamic.datasource",
+      "description": "每一个数据源",
+      "type": "java.util.Map<java.lang.String,com.anson.dynamic.datasource.autoconfigure.DynamicDataSource>"
+    },
+    {
+      "sourceType": "com.anson.dynamic.datasource.autoconfigure.DynamicDataSourceProperties",
+      "defaultValue": "master",
+      "name": "spring.datasource.dynamic.primary",
+      "description": "必须设置默认的库,默认master",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.anson.dynamic.datasource.autoconfigure.DynamicDataSourceProperties",
+      "name": "spring.datasource.dynamic.strategy",
+      "description": "多数据源选择算法clazz，默认负载均衡算法",
+      "type": "java.lang.Class<? extends com.anson.dynamic.datasource.strategy.DynamicDataSourceStrategy>"
+    }
+  ]
+}
